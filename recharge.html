@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM RECHARGE OPERATION</title>
+</head>
+<body>
+  <script>
+    //  ATM Recharge Operation
+    let user = prompt(`Input your name`);
+    let bank = prompt(`Welcome ${user}! please input your bank name`)
+    if (isNaN(bank)) {
+    let options = prompt (`Kindly select account type 
+   1. savings
+    2. current `);
+    if (options == "1" || options == "2"){
+        let option = prompt (`select an option
+        1. check balance
+        2. withdraw
+        3. buy aritime
+        4. buy data
+        5. transfer`)
+        if (option == 2 || option == 3 ||option == 4 || option ==5){
+            let amount = prompt( "please enter amount")
+            alert (`congratulation ${user}! Purchase of data/airtime ${amount} was successful`)
+        }else if (option == 1){
+            alert ("you know the amount in your account abeg")
+        }else{
+            alert("invalid input")
+        }
+    }else{
+alert ("invalid input")
+    }
+}else{
+    alert ("please enter a valid bank name")
+}
+</script>
+</body>
+</html>
